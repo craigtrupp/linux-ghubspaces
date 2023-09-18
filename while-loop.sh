@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "How many loops do you want?"
 read LOOPS
 
