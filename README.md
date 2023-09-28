@@ -28,3 +28,7 @@
     - Writing Bash Scripts & Command-Line Tools : Essentials to building a Bash Script, Bash Functions, Bash Command Line Tool, Lab - Bash Command Line Tool
     - **Shell Scripts** - This section I created a lot of individual shell scripts for fundamentals here for reference with types and command commands 
 
+* **`Week 4 - Composing File & Data Solutions`**
+    - Search the Filesystem : Methods for Searching, Locate Command to Find Files in Linux, Find Command for Linux, xargs Extend Search Capabilities, mdfind on OS X
+        - Lab : Searching from the Bash Prompt
+
