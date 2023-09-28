@@ -1,0 +1,68 @@
+Part 1: Search with find
+ - Search the filesystem for CSV files: find -name "*.csv"
+ - Search the filesystem for .txt files: find -name "*.txt"
+
+# Bash Terminal Output
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/SearchCommands (main) $ find -name "*.csv"
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/SearchCommands (main) $ find -name "*.txt"
+./barDIR/biz.txt
+./fooDIR/bam.txt
+
+- Pretty simple here just a wildcard search for the end of the file at the root
+folder level that shows we only have .txt type files for the find command
+
+
+
+Part 2: Search with find, xargs and grep - Reference Markdown for Prompts
+# Bash Terminal Output
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/SearchCommands (main) $ find -name "*.txt" | xargs grep Apple 
+./barDIR/biz.txt:Apple
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/SearchCommands (main) $ grep -R Banana 
+README.md:3.  Run the following command:  `grep -R Banana .`
+fooDIR/bam.txt:Banana
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/SearchCommands (main) $ grep -R Banana .
+./README.md:3.  Run the following command:  `grep -R Banana .`
+./fooDIR/bam.txt:Banana
+
+
+
+### Some More Sample Output
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/SearchCommands (main) $ time find -name "*.txt" | xargs grep Apple
+./bash-commands.txt:@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/SearchCommands (main) $ find -name "*.txt" | xargs grep Apple 
+./bash-commands.txt:./barDIR/biz.txt:Apple
+./barDIR/biz.txt:Apple
+
+real    0m0.005s
+user    0m0.004s
+sys     0m0.002s
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/SearchCommands (main) $ time find grep -R Banana .
+find: unknown predicate `-R'
+
+real    0m0.003s
+user    0m0.002s
+sys     0m0.001s
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/SearchCommands (main) $ time find grep Banana .
+find: ‘grep’: No such file or directory
+find: ‘Banana’: No such file or directory
+.
+./bash-commands.txt
+./README.md
+./LICENSE
+./barDIR
+./barDIR/biz.txt
+./fooDIR
+./fooDIR/bam.txt
+
+real    0m0.004s
+user    0m0.001s
+sys     0m0.002s
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/SearchCommands (main) $ 
+
+
+
+It loos like in part 2 we are using the pipe comand for search every file (-name flage) at the current directory
+and using the regex like grep to find Apple which we can see on the output is in the barDir/biz.txt and gives us the value
+
+The second part is what appears a similar search in a different fashion for finding Banana at that root file where the Bash command went
+
+After timing each, it seems like a fairly minimal tradeoff timewise but we do have a fairly tiny sample here
