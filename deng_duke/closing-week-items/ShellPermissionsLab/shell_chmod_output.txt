@@ -1,0 +1,67 @@
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ find -name "*.py"
+./morePyDIR/three.py
+./one.py
+./two.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ chmod -R -x *.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ python3 ./one.py 
+I am one
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ find -name "*.py" | ls -l
+total 24
+-rw-rw-rw-  1 codespace root 7048 Sep 28 16:13 LICENSE
+-rw-rw-rw-  1 codespace root  856 Sep 28 16:13 README.md
+drwxrwxrwx+ 2 codespace root 4096 Sep 28 16:13 morePyDIR
+-rw-rw-rw-  1 codespace root   41 Sep 28 16:13 one.py
+-rw-rw-rw-  1 codespace root   41 Sep 28 16:13 two.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ find -name "*.py" -type f 
+./morePyDIR/three.py
+./one.py
+./two.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ find -name "*.py" -type f | ls -l
+total 24
+-rw-rw-rw-  1 codespace root 7048 Sep 28 16:13 LICENSE
+-rw-rw-rw-  1 codespace root  856 Sep 28 16:13 README.md
+drwxrwxrwx+ 2 codespace root 4096 Sep 28 16:13 morePyDIR
+-rw-rw-rw-  1 codespace root   41 Sep 28 16:13 one.py
+-rw-rw-rw-  1 codespace root   41 Sep 28 16:13 two.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ find -name "*.py" -type f | -l
+bash: -l: command not found
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ chomd +x one.py 
+bash: chomd: command not found
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ chmod +x one.py 
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ ls -l one.py 
+-rwxrwxrwx 1 codespace root 41 Sep 28 16:13 one.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ python3 one.py 
+I am one
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ chomd -R -x *.py
+bash: chomd: command not found
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ chmod -R -x *.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ ls -l
+total 24
+-rw-rw-rw-  1 codespace root 7048 Sep 28 16:13 LICENSE
+-rw-rw-rw-  1 codespace root  856 Sep 28 16:13 README.md
+drwxrwxrwx+ 2 codespace root 4096 Sep 28 16:13 morePyDIR
+-rw-rw-rw-  1 codespace root   41 Sep 28 16:13 one.py
+-rw-rw-rw-  1 codespace root   41 Sep 28 16:13 two.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ ls -l | find -name "*.py"
+./morePyDIR/three.py
+./one.py
+./two.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ ls -l morePyDIR/three.py 
+-rw-rw-rw- 1 codespace root 43 Sep 28 16:13 morePyDIR/three.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ python3 morePyDIR/three.py 
+I am three
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ pyton3 one.py 
+bash: pyton3: command not found
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ python3 one.py 
+I am one
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ python3 two.py 
+I am two
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ ls -l two.py 
+-rw-rw-rw- 1 codespace root 41 Sep 28 16:13 two.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ ls -l one.py 
+-rw-rw-rw- 1 codespace root 41 Sep 28 16:13 one.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ ls -l  morePyDIR/th
+ls: cannot access 'morePyDIR/th': No such file or directory
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ ls -l  morePyDIR/three.py 
+-rw-rw-rw- 1 codespace root 43 Sep 28 16:13 morePyDIR/three.py
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ShellPermissionsLab (main) $ 
