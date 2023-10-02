@@ -1,0 +1,51 @@
+Part 1: Search with find
+Search the /bin directory and count the number of file you find find /usr/bin | wc -l
+Find the location of python versions on your system: find /usr/bin | grep python
+How could you change the last command to find a specific version of Python?
+
+
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ ls
+LICENSE  README.md  docs
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ touch search_commands.txt
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find /usr/bin/ | wc -l | tail -5
+1005
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find /usr/bin/ | wc -l | tail -2
+1005
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find /usr/bin/ | wc -l 
+1005
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find /usr/bin/ | wc -c
+19012
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ cat /usr/bin/ | head -10
+cat: /usr/bin/: Is a directory
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ cat /usr/bin | head -10
+cat: /usr/bin: Is a directory
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find /usr/bin | grep python
+/usr/bin/python3.8-config
+/usr/bin/x86_64-linux-gnu-python3.8-config
+/usr/bin/x86_64-linux-gnu-python3-config
+/usr/bin/python3-config
+/usr/bin/python3
+/usr/bin/python3.8
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find /usr/bin | grep python ".*
+> "
+grep: .*
+: No such file or directory
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find /usr/bin | grep python ".*"
+grep: .*: No such file or directory
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find /usr/bin | grep python "3."
+grep: 3.: No such file or directory
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find /usr/bin | grep python "3.*"
+grep: 3.*: No such file or directory
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find /usr/bin | grep python "/usr/bin/*"
+grep: /usr/bin/*: No such file or directory
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find -name "*.txt"
+./docs/foo.txt
+./search_commands.txt
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find -name "*.csv"
+./docs/bar.csv
+./docs/bar2.csv
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find -name "*.csv" | wc -l
+2
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ find -name "*.txt" | wc -l
+2
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/ComposingFileDataSolutions (main) $ 
