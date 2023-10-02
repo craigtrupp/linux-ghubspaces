@@ -1,0 +1,21 @@
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/Searching for Text with Bash (main) $ wc - w oldmansea.txt 
+^C
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/Searching for Text with Bash (main) $ wc -l oldmansea.txt 
+1330 oldmansea.txt
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/Searching for Text with Bash (main) $ wc -w oldmansea.txt 
+26711 oldmansea.txt
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/Searching for Text with Bash (main) $ grep -o -i sun oldmansea.txt | wc -c
+232
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/Searching for Text with Bash (main) $ cat oldmansea.txt | tr " " "\n" | sort | uniq _c | sort -gr | head -10
+uniq: _c: No such file or directory
+@craigtrupp ➜ .../linux-ghubspaces/deng_duke/closing-week-items/Searching for Text with Bash (main) $ cat oldmansea.txt | tr " " "\n" | sort | uniq -c | sort -gr | head -10
+   2121 the
+   1222 and
+    864 he
+    678 
+    540 of
+    449 to
+    429 was
+    429 his
+    391 a
+    381 I
