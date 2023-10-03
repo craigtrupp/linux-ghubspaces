@@ -12,3 +12,11 @@ echo $(( X + Y ))
 echo $(( X - Y))
 echo $(( X * Y ))
 echo $(( X / Y ))
+
+# @craigtrupp ➜ /workspaces/linux-ghubspaces/hacker_rank/diff_easy (main) $ ./world_of_numbers.sh 
+# 3
+# 7
+# 10
+# -4
+# 21
+# 0

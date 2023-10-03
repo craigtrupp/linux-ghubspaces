@@ -10,3 +10,8 @@ elif (( $X < $Y )); then
 else 
     echo 'X is equal to Y'
 fi
+
+# @craigtrupp ➜ /workspaces/linux-ghubspaces/hacker_rank/diff_easy (main) $ ./comparing_numbers.sh 
+# 10
+# 8
+# X is greater than Y
