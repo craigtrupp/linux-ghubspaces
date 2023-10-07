@@ -8,6 +8,7 @@
 # A text file containing N lines of ASCII characters
 
 # We can on the platform use a **while** with a **read** : https://phoenixnap.com/kb/linux-cut
+# while loop pointers : https://www.cyberciti.biz/faq/bash-while-loop/
 
 # read line : Input is read in this way
 # echo ${line}
