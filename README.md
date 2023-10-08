@@ -68,7 +68,7 @@
 * Below is a quick referential link to challenges with a short description of each
 
 #### `Folders / Challenge Intros`
-* First Folder
+* `First Folder`
     - Conditional Numbers Comparisons - Int evaluation after reading in lines : [Comparing Numbers](/hacker_rank/diff_easy/comparing_numbers.sh)
     - Conditional Grep - Read One Character and check inclusion of value in character : [Conditional Grep](/hacker_rank/diff_easy/conditional_grep.sh)
     - .. Echo Hello [Echo Hello](/hacker_rank/diff_easy/lets_echo.sh)
@@ -77,4 +77,12 @@
     - Personal Echo : read in argument, assign arguemnt to text output : [Personal Echo](/hacker_rank/diff_easy/personal-echo.sh)
     - Triangle Classifier : Good multiple conditional numeric operator check for multiple lines in system arguments : [Triangle Numeric Classifier](/hacker_rank/diff_easy/triangle_classifier.sh)
     - Numeric Operator Syntax Reminders : Operations w/read in numeric values : [World of Numbers](/hacker_rank/diff_easy/world_of_numbers.sh)
+
+* `Second Folder - Text Processing Cut`
+    - Challenges are a series of different **`cut`** type operators, delimiters and common usage of the bash command. Commands commonly use a **`while`** type read in logic for all provided arguments to provide in cut type output
+    - First Challenge : Given N lines of input, print the 3rd character from each line as a new line of output. Also using while loop for provided arguments in sample read/user input : [Cut 1](/hacker_rank/diff_easy_2_cut/txtprocess_cut1.sh)
+    - Second Challenge : Display the 2nd and 7th character from each line of text. : [Cut 2](/hacker_rank/diff_easy_2_cut/txtprocess_cut2.sh)
+    - Third Challenge : Display a range of characters starting at the 2nd position of a string and ending at the 7th position (both positions included) : [Cut 3](/hacker_rank/diff_easy_2_cut/txtprocess_cut3.sh)
+    - Fourth Challenge : Display the first four characters from each line of text : [Cut 4](/hacker_rank/diff_easy_2_cut/txtprocess_cut4.sh)
+    - Fifth Challenge : Given a tab delimited file with several columns (tsv format) print the first three fields. Good reminder here of how to maintain delimited spaces need to echo the line argument as below for output check : [Cut 5](/hacker_rank/diff_easy_2_cut/txtprocess_cut5.sh)
 
