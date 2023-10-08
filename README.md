@@ -7,7 +7,7 @@
 
 ## **Sections**
 
-### `Duke Engineering`
+### **`Duke Engineering`**
 4 Week Course Material details and breakdown
 
 * **`Week 1 - Using Linux`**
@@ -27,8 +27,54 @@
     - Manipulating Data w/the Shell : Shell Techniques for Data, Truncating Data, Filtering Data, Search Data, Lab - Truncating Large Files w/Bash
     - Writing Bash Scripts & Command-Line Tools : Essentials to building a Bash Script, Bash Functions, Bash Command Line Tool, Lab - Bash Command Line Tool
     - **Shell Scripts** - This section I created a lot of individual shell scripts for fundamentals here for reference with types and command commands 
+        - [For Loop](/deng_duke/basic-opening-weeks/fruitloop.sh)
+        - [For & Index Array Looping](/deng_duke/basic-opening-weeks/loops.sh)
+        - [While Loop w/Counter](/deng_duke/basic-opening-weeks/while-loop.sh)
+        - [Bash Functions](/deng_duke/basic-opening-weeks/bash-functions.sh)
+        - [Command Line Tools](/deng_duke/basic-opening-weeks/cli.sh)
+        - [Remove FileName w/Loop](/deng_duke/basic-opening-weeks/dropten.sh)
+        - [Hash - Bash Dictionary Equivalent](/deng_duke/basic-opening-weeks/hashes.sh)
+        - [Conditional if/elif/else w/Read User Input](/deng_duke/basic-opening-weeks/if-else.sh)
+        - [Lists - Basic Looping](/deng_duke/basic-opening-weeks/lists.sh)
+        - [Palindromes](/deng_duke/basic-opening-weeks/palindromes.sh)
+        - [Reverse - do/while w/Incrementer and reverse pipe operation to variable](/deng_duke/basic-opening-weeks/reverse.sh)
+        - [Top Ten - Sample File Creation Loop Output](/deng_duke/basic-opening-weeks/topten.sh)
+        - [Truncating - Command to File Output, Shuffle, Tail Commands to files](/deng_duke/basic-opening-weeks/truncating.sh)
 
 * **`Week 4 - Composing File & Data Solutions`**
     - Search the Filesystem : Methods for Searching, Locate Command to Find Files in Linux, Find Command for Linux, xargs Extend Search Capabilities, mdfind on OS X
-        - Lab : Searching from the Bash Prompt
+        - [Searching from Bash Prompt](/deng_duke/closing-week-items/SearchCommands/README.md)
+    - Modifying Files, Directories, Permissions & Archiving in Linux
+        - Moving Files & Directories in Linux
+        - Setting Permissions on Files and Directories in Linux
+        - Archiving Data in Linux
+        - [Basics of Shell Permissions](/deng_duke/closing-week-items/ShellPermissionsLab/README.md)
+    - Processing Text
+        - Intro to Processing & Benefits of Processing Text 
+        - Using grep, cut, sort & unique in Linux
+        - Editing w/Truncaton : awk & sed in Linux
+        - Using RegEx in Linux
+        - [Searching for Text w/Bash](/deng_duke/closing-week-items/Searching%20for%20Text%20with%20Bash/README.md)
+    - Columination : Putting It All Together
+        - Composing File and Data Management Solutions w/Linus
+        - [Searching : Composing File & Data Management Solutions](/deng_duke/closing-week-items/ComposingFileDataSolutions/README.md)
+
+---
+
+<br>
+
+### **`Hacker Rank - Bash Challenges`**
+* Hacker Rank provides a preparation sections w 100+ challenges for Linux Shell/Bash Scripting 
+* Below is a quick referential link to challenges with a short description of each
+
+#### `Folders / Challenge Intros`
+* First Folder
+    - Conditional Numbers Comparisons - Int evaluation after reading in lines : [Comparing Numbers](/hacker_rank/diff_easy/comparing_numbers.sh)
+    - Conditional Grep - Read One Character and check inclusion of value in character : [Conditional Grep](/hacker_rank/diff_easy/conditional_grep.sh)
+    - .. Echo Hello [Echo Hello](/hacker_rank/diff_easy/lets_echo.sh)
+    - For Loop for odd natural numbers in 1 - 99 (numeric conditional syntax) : [Loop w/Numeric Modulus Usage](/hacker_rank/diff_easy/looping_skipping.sh)
+    - Loop for numbers in array/range type iterator : [Looping w/Numbers](/hacker_rank/diff_easy/looping_with_numbers.sh)
+    - Personal Echo : read in argument, assign arguemnt to text output : [Personal Echo](/hacker_rank/diff_easy/personal-echo.sh)
+    - Triangle Classifier : Good multiple conditional numeric operator check for multiple lines in system arguments : [Triangle Numeric Classifier](/hacker_rank/diff_easy/triangle_classifier.sh)
+    - Numeric Operator Syntax Reminders : Operations w/read in numeric values : [World of Numbers](/hacker_rank/diff_easy/world_of_numbers.sh)
 
