@@ -87,5 +87,6 @@
     - Fifth Challenge : Given a tab delimited file with several columns (tsv format) print the first three fields. Good reminder here of how to maintain delimited spaces need to echo the line argument as below for output check : [Cut 5](/hacker_rank/diff_easy_2_cut/txtprocess_cut5.sh)
     - Sixth Challenge : Print the characters from thirteenth position to the end given a text file with lines of ASCII text only. Each line has exactly one sentence : [Cut 6](/hacker_rank/diff_easy_2_cut/txtprocess_cut6.sh)
     - Seventh Challenge : Given a sentence, identify and display its fourth word. Assume that the space (' ') is the only delimiter between words. Use of delimiter with "-d" and "-f" delimiter and fields argurments : [Cut 7](/hacker_rank/diff_easy_2_cut/txtprocess_cut7.sh)
-    - Eigth Challenge  Given a sentence, identify and display its first three words. Assume that the space (' ')  is the only delimiter between words : [Cut 8](/hacker_rank/diff_easy_2_cut/txtprocess_cut8.sh)
+    - Eigth Challenge : Given a sentence, identify and display its first three words. Assume that the space (' ')  is the only delimiter between words : [Cut 8](/hacker_rank/diff_easy_2_cut/txtprocess_cut8.sh)
+    - Ninth Challenge : Given a tab delimited file with several columns (tsv format) print the fields from second fields to last field. Review file for encapsulation for line reading delimiter maintenance (to meet expected output) : [Cut 9](/hacker_rank/diff_easy_2_cut/txtprocess_cut9.sh)
 
