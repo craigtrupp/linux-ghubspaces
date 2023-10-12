@@ -61,8 +61,6 @@
 
 ---
 
-<br>
-
 ### **`Hacker Rank - Bash Challenges`**
 * Hacker Rank provides a preparation sections w 100+ challenges for Linux Shell/Bash Scripting 
 * Below is a quick referential link to challenges with a short description of each
@@ -89,4 +87,11 @@
     - Seventh Challenge : Given a sentence, identify and display its fourth word. Assume that the space (' ') is the only delimiter between words. Use of delimiter with "-d" and "-f" delimiter and fields argurments : [Cut 7](/hacker_rank/diff_easy_2_cut/txtprocess_cut7.sh)
     - Eigth Challenge : Given a sentence, identify and display its first three words. Assume that the space (' ')  is the only delimiter between words : [Cut 8](/hacker_rank/diff_easy_2_cut/txtprocess_cut8.sh)
     - Ninth Challenge : Given a tab delimited file with several columns (tsv format) print the fields from second fields to last field. Review file for encapsulation for line reading delimiter maintenance (to meet expected output) : [Cut 9](/hacker_rank/diff_easy_2_cut/txtprocess_cut9.sh)
+
+* `Third Folder - More Text Processing`
+    - Head Text File #1 : Get the 20 lines of a text file. Using while loop to append each line to a file, then use head command on the file. Similarly provided a while loop which passed as well. : [Head Text #1](/hacker_rank/diff_easy_3_txtprcssng/head_text_1.sh)
+    - Text File #2 : Display the first 20 characters of an input file. See file for further detail on how to count and read in all lines to confirm the 20 characters. : [Head Text #2](/hacker_rank/diff_easy_3_txtprcssng/head_text_2.sh)
+    - Text File #3 : Display the 12-22 lines of an input file. The head command does not accep a range so you can use a head to end of range and then pipe with a tail command to index to the starting point. : [Head_Tail Range #3](/hacker_rank/diff_easy_3_txtprcssng/head_text_3.sh)
+    - Text file #4 : Tail command to output the last 20 lines of file. : [Tail N #1](/hacker_rank/diff_easy_3_txtprcssng/tail_text_1.sh)
+    - Text file #5 : Tail command to output the last 20 characters of file. : [Tail C #2](/hacker_rank/diff_easy_3_txtprcssng/tail_text_2.sh)
 
